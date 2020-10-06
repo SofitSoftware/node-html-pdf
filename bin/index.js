@@ -4,11 +4,6 @@ var fs = require('fs')
 var pdf = require('../')
 var path = require('path')
 
-const createDOMPurify = require('dompurify')
-const { JSDOM } = require('jsdom')
-const window = new JSDOM('').window
-const DOMPurify = createDOMPurify(window)
-
 var args = process.argv.slice(2)
 
 if (args.length >= 2) {
