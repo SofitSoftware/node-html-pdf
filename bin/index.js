@@ -27,7 +27,7 @@ function help () {
 }
 
 function htmlpdf (source, destination) {
-  var html = DOMPurify.sanitize(fs.readFileSync(source, 'utf8'))
+  var html = fs.readFileSync(source, 'utf8')
   var options = {
     base: 'file://' + path.resolve(source)
   }
